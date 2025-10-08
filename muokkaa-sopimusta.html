@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <title>Muokkaa sopimusta</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="media/logo.png" alt="Yrityksen logo" class="logo">
+
+      <div class="language-selector">
+        <a href="dashboard.html">
+          <img src="media/user.png" alt="Käyttäjäkuvake" class="user-icon">
+        </a>
+        <a href="#-en" lang="en">EN</a> | <a href="#-sv" lang="sv">SV</a>
+      </div>
+    </header>
+
+    <main class="muokkaa-sopimusta">
+      <h1>Muokkaa sopimusta</h1>
+      <form>
+        <p>
+          <label>Sopimuksen tila: </label>
+          <span class="field-value">Voimassa</span>
+          <!-- Tämä kenttä olisi todellisuudessa järjestelmän lukema, ei käyttäjän muokattavissa -->
+        </p>
+
+        <p>
+          <label>Sopimukseen kuuluva parkkitalo: </label>
+          <span class="field-value">Parkkitalo Esimerkki</span>
+          <!-- Tämä kenttä olisi todellisuudessa järjestelmän lukema, ei käyttäjän muokattavissa -->
+        </p>
+
+        <p>
+          Sopimukseen liitetyt rekisteritunnukset (max 2 kpl):
+          <input type="text" name="rekisteri1" placeholder="ABC-123" maxlength="8">
+          <input type="text" name="rekisteri2" placeholder="XYZ-789" maxlength="8">
+          <!-- Järjestelmä hakisi tähän käyttäjän mahdollisesti aiemmin ilmoittamat rekisteritunnukset -->
+        </p>
+
+        <p>
+          <label>
+            Jaettu pysäköintiruutu:
+            <input type="checkbox" name="jaettu_ruutu" value="kylla">
+          </label>
+        </p>
+      </form>
+
+      <button type="button" onclick="window.location.href='dashboard.html'">
+        Tallenna muutokset
+      </button>
+    </main>
+
+    <footer>
+      <img src="media/banneri.png" alt="Alabanneri" class="banner">
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="utf-8">
+        <title>Käyttäjäportaali</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <img src="media/logo.png" alt="Yrityksen logo" class="logo">
+            <div class="language-selector">
+                <a href="#-en" lang="en">EN</a> | <a href="#-sv" lang="sv">SV</a>
+            </div>
+        </header>
+
+        <main class="dashboard">
+            <img src="media/user.png" alt="Käyttäjäkuvake" class="user">
+            <button type="button" onclick="window.location.href='uusi-sopimus.html'">Uusi sopimus</button>
+            <button type="button" onclick="window.location.href='muokkaa-sopimusta.html'">Muokkaa sopimusta</button>
+            <button type="button">Irtisano sopimus</button> <!-- TODO: Add "Oletko varma?" popup tähän -->
+        </main>
+
+        <footer>
+            <img src="media/banneri.png" alt="Alabanneri" class="banner">
+        </footer>
+    </body>
+</html>
